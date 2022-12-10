@@ -3,7 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcafeteria75">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
 
     <EditText
         android:id="@+id/editTextNombre"
@@ -13,6 +29,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.781"
@@ -22,11 +39,13 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/textViewNombre"
+        android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nombre"
         android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
         app:layout_constraintHorizontal_bias="0.368"
@@ -35,11 +54,13 @@
         app:layout_constraintVertical_bias="0.355" />
 
     <TextView
-        android:id="@+id/textViewContraseña"
+        android:id="@+id/tvContraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contrase_a"
         android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextContraseña"
         app:layout_constraintHorizontal_bias="0.588"
@@ -48,28 +69,37 @@
         app:layout_constraintVertical_bias="0.454" />
 
     <Button
-        android:id="@+id/buttonEntrar"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonCrear"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/entrar"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_border"
+        android:text="@string/no_tengo_cuenta"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrar"
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
-        android:id="@+id/buttonCrear"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonEntrar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/no_tengo_cuenta"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_round"
+        android:text="@string/entrar"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.612" />
 
     <EditText
         android:id="@+id/editTextContraseña"
@@ -78,12 +108,14 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
         app:layout_constraintVertical_bias="0.023"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,9 +14,14 @@
         android:theme="@style/Theme.GutiCoffeShop"
         tools:targetApi="31">
         <activity
+            android:name=".fragments_activities"
+            android:exported="false"
+            android:label="@string/title_activity_fragments_activities"
+            android:theme="@style/Theme.GutiCoffeShop.NoActionBar" />
+        <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashTheme"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,13 +31,18 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

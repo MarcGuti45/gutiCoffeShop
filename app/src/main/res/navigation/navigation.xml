@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentIni2">
 
+    <fragment
+        android:id="@+id/fragmentIni2"
+        android:name="com.marc.guticoffeshop.FragmentIni"
+        android:label="FragmentIni"
+        tools:layout="@layout/fragment_ini"
+        >
+        <action
+            android:id="@+id/action_fragmentIni2_to_fragmentCatalog"
+            app:destination="@id/fragmentCatalog" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCatalog"
+        android:name="com.marc.guticoffeshop.FragmentCatalog"
+        android:label="FragmentCatalog"
+        tools:layout="@layout/fragment_catalog"/>
+    <fragment
+        android:id="@+id/fragmentFAQS"
+        android:name="com.marc.guticoffeshop.FragmentFAQS"
+        android:label="FragmentFAQS"
+        tools:layout="@layout/fragment_faqs"/>
+    <fragment
+        android:id="@+id/fragmentContact2"
+        android:name="com.marc.guticoffeshop.FragmentContact"
+        android:label="FragmentContact"
+        tools:layout="@layout/fragment_contact"/>
 </navigation>
