@@ -13,6 +13,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.marc.guticoffeshop.adapter.MenuBegudaAdapter
 import com.marc.guticoffeshop.databinding.ActivityMainBinding
 import com.marc.guticoffeshop.databinding.FragmentIniBinding
 
@@ -27,9 +30,5 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
     }
-
-
 }
