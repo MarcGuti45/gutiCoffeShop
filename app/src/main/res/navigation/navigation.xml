@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentCatalog"
-        android:name="com.marc.guticoffeshop.FragmentCatalog"
+        android:name="com.marc.guticoffeshop.begudes.FragmentCatalog"
         android:label="FragmentCatalog"
         tools:layout="@layout/fragment_catalog"/>
     <fragment

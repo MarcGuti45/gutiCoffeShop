@@ -14,8 +14,8 @@ import com.marc.guticoffeshop.databinding.FragmentIniBinding
 class FragmentIni : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-         val binding = DataBindingUtil.inflate<FragmentIniBinding>(inflater,
+                               savedInstanceState: Bundle?): View? {
+        val binding = DataBindingUtil.inflate<FragmentIniBinding>(inflater,
             R.layout.fragment_ini,container,false)
 
 

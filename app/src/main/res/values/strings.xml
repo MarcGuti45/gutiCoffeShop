@@ -30,4 +30,12 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="order_here">ORDER HERE</string>
+    <string name="guti_coffe_shop">Guti Coffe Shop</string>
+    <string name="las_pastas_mas_apetecibles_a_cualquier_hora_del_dia">Las pastas mas apetecibles a cualquier hora del dia</string>
+    <string name="gran_variedad_de_bebidas_al_mejor_precio">Gran variedad de bebidas al mejor precio</string>
+    <string name="tenemos_el_caf_con_la_mejor_calidad_de_la_peninsula">Tenemos el café con la mejor calidad de la peninsula</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
 </resources>

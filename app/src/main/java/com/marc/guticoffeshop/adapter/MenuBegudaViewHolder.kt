@@ -3,21 +3,24 @@ package com.marc.guticoffeshop.adapter
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.marc.guticoffeshop.Begudes
+import com.marc.guticoffeshop.begudes.Begudes
 import com.marc.guticoffeshop.R
+import com.marc.guticoffeshop.databinding.ItemBegudesBinding
 
 class MenuBegudaViewHolder(view: View):RecyclerView.ViewHolder(view){
 
-    val begudes = view.findViewById<TextView>(R.id.tvName)
-    val preu = view.findViewById<TextView>(R.id.tvPrice)
-    val photo = view.findViewById<ImageView>(R.id.ivBeguda)
+    val binding = ItemBegudesBinding.bind(view)
 
-    fun render(begudesModel: Begudes){
-        begudes.text = begudesModel.nom
-        preu.text = begudesModel.preu
-        Glide.with(photo.context).load(begudesModel.photo).into(photo)
+    fun render(begudesModel: Begudes, onClickListener:(Begudes) -> Unit){
+        binding.tvName.text = begudesModel.nom
+        binding.tvPrice.text = begudesModel.preu.toString()
+        Glide.with(binding.ivBeguda.context).load(begudesModel.photo).into(binding.ivBeguda)
 
+        itemView.setOnClickListener{
+            onClickListener(begudesModel)
+        }
     }
 }
