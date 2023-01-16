@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardElevation="6dp"
-    app:cardCornerRadius="@android:dimen/app_icon_size">
+    app:cardCornerRadius="@android:dimen/app_icon_size"
+    android:id="@+id/itemBeguda">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
