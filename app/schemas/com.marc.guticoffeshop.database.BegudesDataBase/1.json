@@ -1,0 +1,46 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b2120f96fec6d174035f8a22360f7dcb",
+    "entities": [
+      {
+        "tableName": "begudes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`nom` TEXT NOT NULL, `preu` INTEGER NOT NULL, `photo` TEXT NOT NULL, PRIMARY KEY(`nom`))",
+        "fields": [
+          {
+            "fieldPath": "nom",
+            "columnName": "nom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "preu",
+            "columnName": "preu",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photo",
+            "columnName": "photo",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "nom"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b2120f96fec6d174035f8a22360f7dcb')"
+    ]
+  }
+}
