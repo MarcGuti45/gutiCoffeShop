@@ -11,12 +11,17 @@ import com.marc.guticoffeshop.R
 import com.marc.guticoffeshop.adapter.MenuBegudaAdapter
 import com.marc.guticoffeshop.begudes.Begudes
 import com.marc.guticoffeshop.begudes.MenuBegudaProvider
+import com.marc.guticoffeshop.database.BegudesDataBase
 import com.marc.guticoffeshop.databinding.FragmentCatalogBinding
 
 
 class FragmentCatalog : Fragment() {
 
     private lateinit var  binding: FragmentCatalogBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
