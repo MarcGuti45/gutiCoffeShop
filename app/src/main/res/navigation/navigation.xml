@@ -35,4 +35,8 @@
         android:name="com.marc.guticoffeshop.menjar.FragmentMenjarCatalog"
         android:label="FragmentMenjarCatalog"
         tools:layout="@layout/fragment_contact"/>
+    <fragment
+        android:id="@+id/fragmentCafeCatalog2"
+        android:name="com.marc.guticoffeshop.cafe.FragmentCafeCatalog"
+        android:label="FragmentCafeCatalog" />
 </navigation>
