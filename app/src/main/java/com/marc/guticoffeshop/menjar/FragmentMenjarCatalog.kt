@@ -8,6 +8,8 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.marc.guticoffeshop.R
+import com.marc.guticoffeshop.SharedViewModel.Companion.listOfCaffes
+import com.marc.guticoffeshop.SharedViewModel.Companion.listOfPrices
 import com.marc.guticoffeshop.adapter.MenuMenjarAdapter
 import com.marc.guticoffeshop.databinding.FragmentMenjarCatalogBinding
 
@@ -37,6 +39,9 @@ class FragmentMenjarCatalog : Fragment() {
     }
     fun onSelected (menjar: Menjar){
         Toast.makeText(requireContext(), menjar.nom, Toast.LENGTH_SHORT).show()
+        listOfCaffes.add(menjar.nom)
+        listOfPrices.add(menjar.preu)
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

@@ -5,6 +5,6 @@ import androidx.room.Entity
 @Entity(tableName = "menjar")
 data class Menjar (
     val nom:String,
-    val preu:String,
+    val preu:Int,
     val photo:String
     )
