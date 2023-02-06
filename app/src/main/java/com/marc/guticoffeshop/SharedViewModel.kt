@@ -2,10 +2,10 @@ package com.marc.guticoffeshop
 
 class SharedViewModel {
     companion object{
-        val listOfCaffes: ArrayList<String> = ArrayList()
-        val listOfPrices: ArrayList<Int> = ArrayList()
-        fun sumTotal(): Int {
-            return listOfPrices.sum()
+        val llistaCafes: ArrayList<String> = ArrayList()
+        val llistaPreus: ArrayList<Int> = ArrayList()
+        fun sumaTotal(): Int {
+            return llistaPreus.sum()
         }
     }
 }

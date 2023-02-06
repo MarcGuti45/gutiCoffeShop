@@ -13,6 +13,9 @@
         android:id="@+id/fragmentCafeCatalog2"
         android:title="@string/cafe" />
     <item
+        android:id="@+id/fragmentCarrito"
+        android:title="@string/carrito" />
+    <item
         android:id="@+id/fragmentFAQS"
         android:title="@string/faqs" />
 </menu>

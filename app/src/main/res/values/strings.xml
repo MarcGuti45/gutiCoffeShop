@@ -41,4 +41,6 @@
     <string name="menjar">MENJAR</string>
     <string name="begudes">BEGUDES</string>
     <string name="cafe">CAFES</string>
+    <string name="total">TOTAL:</string>
+    <string name="carrito">CARRITO</string>
 </resources>

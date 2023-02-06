@@ -39,4 +39,9 @@
         android:id="@+id/fragmentCafeCatalog2"
         android:name="com.marc.guticoffeshop.cafe.FragmentCafeCatalog"
         android:label="FragmentCafeCatalog" />
+    <fragment
+        android:id="@+id/fragmentCarrito"
+        android:name="com.marc.guticoffeshop.FragmentCarrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
 </navigation>
