@@ -11,6 +11,9 @@ import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.marc.guticoffeshop.MainActivity
 import com.marc.guticoffeshop.R
+import com.marc.guticoffeshop.SharedViewModel
+import com.marc.guticoffeshop.SharedViewModel.Companion.llistaCafes
+import com.marc.guticoffeshop.SharedViewModel.Companion.llistaPreus
 import com.marc.guticoffeshop.adapter.MenuBegudaAdapter
 import com.marc.guticoffeshop.begudes.Begudes
 import com.marc.guticoffeshop.begudes.MenuBegudaProvider
@@ -46,7 +49,8 @@ class FragmentCatalog : Fragment() {
     }
     fun onSelected (beguda : Begudes){
         Toast.makeText(requireContext(), beguda.nom, Toast.LENGTH_SHORT).show()
-
+        llistaCafes.add(beguda.nom)
+        llistaPreus.add(beguda.preu)
     }
 
 

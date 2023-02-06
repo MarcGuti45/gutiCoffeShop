@@ -43,4 +43,19 @@
     <string name="cafe">CAFES</string>
     <string name="total">TOTAL:</string>
     <string name="carrito">CARRITO</string>
+    <string name="_2">2</string>
+    <string name="caf_sol">Café Sol</string>
+    <string name="euro">€</string>
+    <string name="todo4">TODO</string>
+    <string name="efectuar_pago">EFECTUAR PAGO</string>
+    <string name="carrito_de_compra">CARRITO DE COMPRA</string>
+    <string name="si_tenemos_una_gama_de_productos_apto_para_veganos">Si, tenemos una gama de productos apto para veganos</string>
+    <string name="preguntas_frecuentes">PREGUNTAS FRECUENTES</string>
+    <string name="disponeis_de_productos_para_veganos">¿Disponeis de productos para veganos?</string>
+    <string name="haceis_entregas_a_domicilio">¿Haceis entregas a domicilio?</string>
+    <string name="actualmente_no_estamos_trabajando_en_ello">Actualmente no, estamos trabajando en ello</string>
+    <string name="habr_n_ofertas_para_fechas_se_aladas">¿Habrán ofertas para fechas señaladas?</string>
+    <string name="si_como_cada_a_o_hacemos_descuentos_en_festividades">Si, como cada año hacemos descuentos en festividades</string>
+    <string name="organiz_is_eventos_c_terings">¿Organizáis eventos/cáterings?</string>
+    <string name="si_se_pueden_encargar_nuestros_productos_con_al_menos_48h_de_antelaci_n">Si, se pueden encargar nuestros productos con al menos 48h de antelación</string>
 </resources>

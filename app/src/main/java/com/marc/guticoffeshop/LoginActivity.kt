@@ -18,12 +18,9 @@ class LoginActivity : AppCompatActivity() {
         val password = findViewById<EditText>(R.id.editTextContraseña)
 
         buttonEntrar.setOnClickListener(){
-            if(nomAdmin.getText().toString() == "Marc" && password.getText().toString() == "admin123") {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            } else{
-                Toast.makeText(this, "Nom d'admin o password incorrecte, torna a provar", Toast.LENGTH_SHORT).show()
-            }
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
         }
 
         buttonCrear.setOnClickListener(){
